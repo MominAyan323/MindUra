@@ -303,6 +303,51 @@ button {
 .mr-auto, .mx-auto {
     flex: 3;
 }
+/* FLOATING WHATSAPP BUTTON */
+
+.whatsapp_float{
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    animation: whatsappPulse 2s infinite;
+    transition: 0.3s;
+}
+
+.whatsapp_float:hover{
+    background:#1ebe5d;
+    transform: scale(1.1);
+}
+
+/* Pulse Animation */
+@keyframes whatsappPulse{
+    0%{ box-shadow:0 0 0 0 rgba(37,211,102,0.6); }
+    70%{ box-shadow:0 0 0 15px rgba(37,211,102,0); }
+    100%{ box-shadow:0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* Mobile Size */
+@media(max-width:768px){
+    .whatsapp_float{
+        width:55px;
+        height:55px;
+        font-size:26px;
+        bottom:20px;
+        right:15px;
+    }
+}
 /* banner section start */
 
 /* ===============================
