@@ -139,7 +139,7 @@
                         </div>
                      </form>
 
-                     
+
 
                   </div>
                </div>
@@ -210,7 +210,43 @@
       </div>
    </div>
    <!-- copyright section end -->
+   <!-- WHATSAPP FLOAT -->
+   <a href="https://wa.me/917016772182?text=Hello%20MindUra%20Team%20👋%20Mujhe%20information%20chahiye."
+      class="whatsapp_float" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+   </a>
+
+
+   <!-- SCROLL TO TOP BUTTON -->
+   <div class="swipe_up" id="swipeUp">
+      <span></span>
+      <span></span>
+   </div>
    <!-- Javascript files-->
+   <script>
+
+      const swipeBtn = document.getElementById("swipeUp");
+
+      window.addEventListener("scroll", function () {
+
+         if (window.scrollY > 400) {
+            swipeBtn.classList.add("show");
+         } else {
+            swipeBtn.classList.remove("show");
+         }
+
+      });
+
+      swipeBtn.addEventListener("click", function () {
+
+         window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+         });
+
+      });
+
+   </script>
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
@@ -247,24 +283,24 @@
       })   
    </script>
    <script>
-document.getElementById("minduraForm").addEventListener("submit", function(e){
-  e.preventDefault();
+      document.getElementById("minduraForm").addEventListener("submit", function (e) {
+         e.preventDefault();
 
-  let formData = {
-    Name: this.Name.value,
-    Phone: this.Phone.value,
-    Email: this.Email.value,
-    Details: this.Details.value,
-    Message: this.Message.value
-  };
+         let formData = {
+            Name: this.Name.value,
+            Phone: this.Phone.value,
+            Email: this.Email.value,
+            Details: this.Details.value,
+            Message: this.Message.value
+         };
 
-  fetch("https://script.google.com/macros/s/AKfycbxl2-H5coAsfQ_Aitj19U2QBsZFsinHfoQy0B6HAa_2N2yWKaFRiKmpMGBGm7TrkzEJ/exec", {
-    method: "POST",
-    body: JSON.stringify(formData)
-  })
-  .then(() => alert("Form Submitted Successfully"));
-});
-</script>
+         fetch("https://script.google.com/macros/s/AKfycbxl2-H5coAsfQ_Aitj19U2QBsZFsinHfoQy0B6HAa_2N2yWKaFRiKmpMGBGm7TrkzEJ/exec", {
+            method: "POST",
+            body: JSON.stringify(formData)
+         })
+            .then(() => alert("Form Submitted Successfully"));
+      });
+   </script>
 </body>
 
 </html>
