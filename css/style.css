@@ -454,8 +454,41 @@ button {
 }
 
 /* HIDE OLD IMAGE STYLE */
-.banner_img{
-    display:none;
+/* ================= BANNER BACKGROUND ================= */
+
+.banner-bg{
+    position:relative;
+    background-image:url("../images/banner-1.jpg"); /* DESKTOP IMAGE */
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:600px;
+    display:flex;
+    align-items:center;
+}
+
+/* DARK OVERLAY (Premium look) */
+.banner-bg::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.banner-bg .container{
+    position:relative;
+    z-index:2;
+}
+/* ================= MOBILE BANNER ================= */
+
+@media(max-width:768px){
+
+.banner-bg{
+    background-image:url("../images/banner-gb-1.jpg"); /* MOBILE IMAGE */
+    min-height:520px;
+    background-position:center top;
+}
+
 }
 
 /* ===============================
