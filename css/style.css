@@ -219,7 +219,7 @@ button {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.mindura-logo{
+.Brainora-logo{
    font-size: 38px;
    font-weight: bold;
    color: #fa7e64 !important;
@@ -227,7 +227,7 @@ button {
    text-transform: uppercase;
 }
 
-.mindura-logo:hover{
+.Brainora-logo:hover{
    color:#0f172a !important;
 }
 .navbar-brand {
@@ -562,9 +562,9 @@ button {
 
 /* IMAGE */
 .tuition_img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
+    width:300px;
+    height:200px;
+    border-radius:20%;
     object-fit:cover;
     margin-bottom:15px;
 }
@@ -761,7 +761,7 @@ button.owl-next {
 }
 
 .readmore_bt{
-    width: 170px;
+    width: 250px;
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -772,7 +772,7 @@ button.owl-next {
     font-size: 18px;
     color: #ffffff;
     background-color: #252525;
-    padding: 8px 0px;
+    padding: 8px 20px;
     text-align: center;
     border-radius: 40px;
     text-transform: uppercase;
